@@ -316,10 +316,10 @@ address {
 
 .members-ul {
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 24px;
     margin-top: 8px;
-    
 }
 
 .members-div {
@@ -387,7 +387,6 @@ address {
 
 .members-soc-icon {
     fill: #f4f4fd;
-    
 }
 
 .members-a {
@@ -410,7 +409,6 @@ address {
 .members-soc-icon-item {
     width: 40px;
     height: 40px;
-    
 }
 
 /* Section four */
@@ -456,6 +454,7 @@ address {
 }
 
 .portfolio-item {
+    width: 100%;
     /* width: calc((100% - 48px) / 3); */
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -914,9 +913,13 @@ address {
     margin: 0 auto;
 }
 
+
+
 @media screen and (min-width: 320px) {
     
 }
+
+
 
 @media screen and (min-width: 768px) {
 .container { 
@@ -939,6 +942,7 @@ address {
     text-align: start;
 }
 
+
 /* ===========SECTION THREE=========== */
 
 .members-item {
@@ -959,8 +963,9 @@ address {
 
 
 
-
 }
+
+
 
 @media screen and (min-width: 1158px) {
     .container { 
