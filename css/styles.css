@@ -40,9 +40,10 @@ address {
 }
 
 .container { 
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* max-width: 1158px; */
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
 }
 
@@ -252,6 +253,8 @@ address {
 }
 
 .description {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .description-list {
@@ -261,14 +264,13 @@ address {
     letter-spacing: 0.02em;
     color: #2e2f42;
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 72px;
 }
 
 .description-li {
-    width: calc((100% - 24px *3) / 4);
-}
-
-.description-icon {
+    /* width: calc((100% - 24px *3) / 4); */
+    width: 100%;
 }
 
 .description-icon-div {
@@ -286,20 +288,21 @@ address {
 .description-subtitle {
     color: #2E2F42;
     font-family: "Roboto", sans-serif;
-    font-size: 20px;
+    font-size: 36px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .description-item {
     color: #434455;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -308,7 +311,7 @@ address {
 
 .members {
     background-color: #F4F4FD;
-    
+    padding-top: 96px;
 }
 
 .members-ul {
@@ -316,15 +319,12 @@ address {
     justify-content: center;
     gap: 24px;
     margin-top: 8px;
+    
 }
 
 .members-div {
     padding: 32px 0;
-    
-}
 
-.members-container {
-    
 }
 
 .members-title {
@@ -341,6 +341,7 @@ address {
 
 .members-cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     
 }
@@ -349,12 +350,13 @@ address {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    width: ((100% - 72px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
     
 }
 
 .members-img {
-    
+    width: 100%;
 }
 
 .card-subtitle {
@@ -397,6 +399,7 @@ address {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .members-a:hover,
@@ -906,4 +909,78 @@ address {
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+.container { 
+    max-width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.description-list {
+    gap: 72px 24px; 
+}
+
+.description-li {
+    width: calc((100% - 24px) / 2);
+}
+
+.description-subtitle {
+    text-align: start;
+}
+
+.members-item {
+    width: calc((100% - 24px) / 2);
+}
+
+.members-ul {
+    gap: 24px 64px;
+}
+
+
+}
+
+@media screen and (min-width: 1440px) {
+    .container { 
+    max-width: 1440px;
+    padding-left: 16px;
+    padding-right: 16px;
+    }
+
+    .description-list {
+    padding-left: 156px;
+    padding-right: 156px;
+    gap: 8px 24px;
+    }
+
+    .description-li {
+    width: calc((100% - 24px *3) / 4);
+    }
+
+    .description-subtitle {
+    color: #2E2F42;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    
+    }
+
+    .description-item {
+    color: #434455;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    }
+
 }
