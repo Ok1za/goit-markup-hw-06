@@ -53,7 +53,25 @@ address {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     background-color: #FFF;
-    padding: 24px 0;
+    
+    /* padding: 24px 0; */
+}
+
+.button-menu-open {
+    fill: #2f2f37;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-container {
@@ -88,6 +106,8 @@ address {
     color: #4d5ae5;
     margin-right: 76px;
     position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-menu-link:hover,
@@ -176,20 +196,22 @@ address {
 /* Section one */
 
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    
+
 }
 
 .main {
     background-color: #2E2F42;
-    padding-top: 188px;
-    padding-bottom: 188px;
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .main-container {
@@ -200,12 +222,16 @@ address {
     color: #FFF;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-size: 56px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.11;
     letter-spacing: 0.02em;
-    max-width: 496px;
+    text-transform: capitalize;
+    width: 288px;
+    padding-left: 16px;
+    padding-right: 16px;
+    /* max-width: 496px; */
     margin: 0 auto;
 }
 
@@ -420,6 +446,7 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    
 }
 
 .portfolio-div {
@@ -525,20 +552,29 @@ address {
 
 .footer {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .footer-div {
     display: flex;
-    align-items: baseline;
-    
+    flex-direction: column;
+    gap: 72px;
 }
 
 .container-footer {
-    margin-right: 120px;
-    
+    /* margin-right: 120px; */
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 102px;
+    padding-right: 102px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .logo {
@@ -549,8 +585,11 @@ address {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
     
 }
 
@@ -561,12 +600,15 @@ address {
 .footer-item {
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    max-width: 264px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 264px;
+    /* max-width: 264px; */
     
 }
 
 .footer-soc {
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 .footer-soc-item {
@@ -576,19 +618,22 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
-    
+    text-align: center;
 }
 
 .footer-list {
     display: flex;
     gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
     
 }
 
 .ft-soc {
     width: 40px;
     height: 40px;
-    
+    margin-bottom: 72px;
 }
 
 .footer-link {
@@ -613,10 +658,12 @@ address {
 }
 
 .footer-input {
-    width: 264px;
+    width: 288px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--WHITE, #FFF);
+    opacity: 0.3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;
@@ -640,8 +687,6 @@ address {
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
-    justify-content: center;
-    align-items: center;
     gap: 16px;
     border-radius: 4px;
     font-weight: 500;
@@ -660,12 +705,16 @@ address {
 }
 
 .footer-div-sub {
-
+    text-align: center;
 }
 
 .footer-form {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
+
 }
 
 .footer-text {
@@ -928,6 +977,9 @@ address {
     padding-right: 16px;
 }
 
+/* ===========SECTION ONE=========== */
+
+
 /* ===========SECTION TWO=========== */
 
 .description-list {
@@ -961,6 +1013,8 @@ address {
     width: calc((100% - 24px) / 2);
 }
 
+/* ===========FOOTER=========== */
+
 
 
 }
@@ -973,6 +1027,10 @@ address {
         padding-left: 16px;
         padding-right: 16px;
     }
+
+    /* ===========SECTION ONE=========== */
+
+
 
     /* ===========SECTION TWO=========== */
 
@@ -1036,5 +1094,8 @@ address {
         padding-right: 156px;
         gap: 48px 24px;
     }
+
+    /* ===========FOOTER=========== */
+
 
 }
