@@ -74,6 +74,7 @@ address {
     padding-bottom: 16px;
 }
 
+
 .header-container {
     display: flex;
     align-items: center;
@@ -175,8 +176,8 @@ address {
 }
 
 .address {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -729,6 +730,117 @@ address {
 .btn-icon { 
 }
 
+/* ====================== MENU ====================== */
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.menu-modal {
+    width: 320px;
+    height: 640px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 16px;
+    padding-top: 72px;
+    padding-right: 40px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 168px;
+}
+
+.index-menu {
+    color: #404BBF;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.menu-list-item {
+    color: #2E2F42;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.menu-list-contacts {
+    color: #434455;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+
+.menu-tel-add {
+    color: #4D5AE5;
+}
+
+.menu-contacts {
+
+}
+
+.menu-tel {
+    margin-bottom: 24px;
+    
+}
+
+.menu-soc {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 72px;
+}
+
+.menu-soc-icon {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.menu-list-icon {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    
+}
+
+.menu-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ====================== BACKDROP ====================== */
 
 .backdrop {
@@ -743,8 +855,8 @@ address {
 }
 
 .modal {
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    height: 623px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
     border-radius: 4px;
@@ -753,7 +865,10 @@ address {
     left: 50%;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%);
-    padding: 72px 24px 24px 24px;
+    padding-top: 72px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
 }
 
 .modal-btn {
@@ -843,7 +958,6 @@ address {
 
 .modal-label {
     display: block;
-    margin-bottom: 5px;
     color: #8E8F99;
     font-size: 12px;
     font-style: normal;
@@ -880,13 +994,12 @@ address {
 }
 
 .modal-text {
-    width: 360px;
+    width: 256px;
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     outline: transparent;
     padding: 8px 16px;
-    outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
     font-size: 12px;
@@ -901,7 +1014,8 @@ address {
 }
 
 .is-open {
-    opacity: 1;
+    opacity: 0;
+    /* opacity: 1; */
     visibility: visible;
     pointer-events: auto;
 }
@@ -937,12 +1051,15 @@ address {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 12px;
     fill: transparent;
+    
 }
+
 
 .check-input:checked + .check-text span {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
+    
 }
 
 .modal-send-btn {
@@ -960,6 +1077,7 @@ address {
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
+
 }
 
 
