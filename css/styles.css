@@ -326,7 +326,6 @@ address {
 
 .section {
     
-
 }
 
 .main {
@@ -421,6 +420,7 @@ address {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
+    display: none;
 }
 
 .description-li {
@@ -890,7 +890,7 @@ address {
     padding-top: 72px;
     padding-left: 16px;
     padding-right: 16px;
-    
+    padding-bottom: 24px;
 }
 
 .modal-btn {
@@ -994,7 +994,7 @@ address {
 }
 
 .modal-comment {
-    margin-bottom: 24px;
+    
 }
 
 .modal-icon {
@@ -1047,6 +1047,7 @@ address {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    
 }
 
 .check-text a {
@@ -1060,6 +1061,7 @@ address {
 .modal-a {
     white-space: nowrap;
     margin-left: 5px;
+    
 }
 
 .check-text span {
@@ -1071,7 +1073,7 @@ address {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 12px;
+    margin-right: 8px;
     fill: transparent;
     
 }
@@ -1099,7 +1101,7 @@ address {
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
-
+    
 }
 
 
@@ -1117,6 +1119,40 @@ address {
     padding-right: 16px;
 }
 
+/* ===========HEADER=========== */
+
+.header-list {
+    display: block;
+    display: flex;
+}
+
+.header-list-contacts {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.address {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.header-contacts {
+    display: block;
+    gap: 12px;
+}
+
+.button-menu-open {
+    display: none;
+}
+
+.current::after {
+    bottom: -8px;
+}
+
+.header-menu-link {
+    margin-right: 120px;
+}
 /* ===========SECTION ONE=========== */
 
 .main-title {
@@ -1173,7 +1209,6 @@ address {
 /* ===========FOOTER=========== */
 
 
-
 }
 
 
@@ -1182,6 +1217,36 @@ address {
         max-width: 1158px;
         padding-left: 16px;
         padding-right: 16px;
+        margin: 0 auto;
+    }
+
+    /* ===========HEADER=========== */
+
+    .header {
+        padding: 24px 0;
+    }
+
+    .header-menu-link {
+        
+    }
+
+    .header-list {
+        margin: auto;
+    }
+
+    .header-menu-link {
+        margin-right: 76px;
+    }
+
+    .header-contacts {
+        display: flex;
+        gap: 40px;
+        margin: 0;
+    }
+
+    .address {
+        font-size: 16px;
+        
     }
 
     /* ===========SECTION ONE=========== */
@@ -1211,9 +1276,9 @@ address {
     /* ===========SECTION TWO=========== */
 
     .description-list {
-        padding-left: 156px;
-        padding-right: 156px;
         gap: 8px 24px;
+        display: block;
+        display: flex;
     }
 
     .description-li {
@@ -1229,7 +1294,6 @@ address {
         line-height: 1.2;
         letter-spacing: 0.02em;
         margin-bottom: 8px;
-    
     }
 
     .description-item {
@@ -1240,6 +1304,7 @@ address {
         line-height: 1.5;
         letter-spacing: 0.02em;
     }
+
 
     /* ===========SECTION THREE=========== */
 
