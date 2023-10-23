@@ -23,21 +23,14 @@
 
             </a>
 
-            <button type="button" class="button-menu-open">
-                <svg class="button-menu-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-            </button>
-
-
-            <!-- <ul class="header-list">
+            <ul class="header-list">
                 <li class="header-list-item header-studio"><a href="./index.html" class="index current">Studio</a></li>
                 <li class="header-list-item"><a href="" class="index">Portfolio</a></li>
                 <li class="header-list-item"><a href="" class="index">Contacts</a></li>
-            </ul> -->
+            </ul>
         </nav>
 
-            <!-- <address class="header-list-contacts">
+            <address class="header-list-contacts">
             <ul class="header-contacts">
                 <li class="header-address">
                     <a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a>
@@ -46,8 +39,77 @@
                     <a href="tel:+110001111111" class="address">+11 (000) 111-11-11</a>
                 </li>
             </ul>
-            </address> -->
+            </address>
+
+            <button type="button" class="button-menu-open">
+                <svg class="button-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+            </button>
+
         </div>
+
+<!-- MENU -->
+
+    <div class="menu">
+
+        <div class="menu-modal">
+            <button type="button" class="menu-btn-close">
+                <svg class="menu-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+
+            <div class="menu-list">    
+                <h2 class="menu-list-item"><a href="./index.html" class="index-menu">Studio</a></h2>
+                <h2 class="menu-list-item">Portfolio</h2>
+                <h2 class="menu-list-item">Contacts</h2>
+            </div>
+
+            <div class="menu-contacts">
+            <address class="menu-list-contacts">
+                <h3 class="menu-tel"><a href="tel:+110001111111" class="menu-tel-add address">+11 (000) 111-11-11</a></h3>
+                <h3 class="menu-mail"><a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a></h3>
+            </address>
+            </div>
+        </div>
+            
+
+        <div class="menu-soc">
+                <ul class="menu-list-icon">
+                    <li class="ft-soc">
+                        <a class="footer-link" href="">
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ft-soc">
+                        <a class="footer-link" href="">
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ft-soc">
+                        <a class="footer-link" href="">
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ft-soc">
+                        <a class="footer-link" href="">
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+    </div>
+
     </header>
 
     <main>
@@ -56,7 +118,7 @@
         <section class="main section">
 
         <div class="container main-container">
-                <h1 class="main-title">Effective Solutions <br>for Your Business</h1>
+                <h1 class="main-title">Effective Solutions for Your Business</h1>
     
                 <button type="button" class="main-button">Order Service</button>
         </div>    
@@ -124,6 +186,7 @@
                 <ul class="members-cards">
                     <li class="members-item">
                         <img 
+                        srcset="./images/mark.jpg 1x, ./images/mark-2x.jpg 2x"
                         src="./images/mark.jpg" 
                         alt="Mark Guerrero"
                         width="264"
@@ -169,6 +232,7 @@
 
                     <li class="members-item">
                         <img 
+                        srcset="./images/tom.jpg 1x, ./images/tom-2x.jpg 2x"
                         src="./images/tom.jpg" 
                         alt="Tom Ford"
                         width="264"
@@ -214,6 +278,7 @@
 
                     <li class="members-item">
                         <img 
+                        srcset="./images/camila.jpg 1x, ./images/camila.jpg 2x"
                         src="./images/camila.jpg" 
                         alt="Camila Garcia"
                         width="264"
@@ -259,6 +324,7 @@
 
                     <li class="members-item">
                         <img 
+                        srcset="./images/daniel.jpg 1x, ./images/daniel.jpg 2x"
                         src="./images/daniel.jpg" 
                         alt="Daniel Wilson"
                         width="264"
@@ -315,6 +381,7 @@
                     <li class="portfolio-item card-one">
                         <div class="portfolio-cards">
                         <img 
+                        srcset="./images/banking-app.jpg 1x, ./images/banking-app-2x.jpg 2x"
                         src="./images/banking-app.jpg" 
                         alt="Banking App"
                         width="360"
@@ -333,6 +400,7 @@
                     <li class="portfolio-item card-one">
                     <div class="portfolio-cards">
                     <img 
+                        srcset="./images/cashless-payment.jpg 1x, ./images/cashless-payment-2x.jpg 2x"
                         src="./images/cashless-payment.jpg" 
                         alt="Cashless Payment"
                         width="360"
@@ -351,6 +419,7 @@
                     <li class="portfolio-item card-one">
                     <div class="portfolio-cards">
                         <img 
+                        srcset="./images/meditation-app.jpg 1x, ./images/meditation-app-2x.jpg 2x"
                         src="./images/meditation-app.jpg" 
                         alt="Meditation App"
                         width="360"
@@ -369,6 +438,7 @@
                     <li class="portfolio-item card-one">
                     <div class="portfolio-cards">
                         <img 
+                        srcset="./images/taxi-service.jpg 1x, ./images/taxi-service-2x.jpg 2x"
                         src="./images/taxi-service.jpg" 
                         alt="Taxi Service"
                         width="360"
@@ -387,6 +457,7 @@
                     <li class="portfolio-item card-one">
                     <div class="portfolio-cards">
                         <img 
+                        srcset="./images/screen-illustrations.jpg 1x, ./images/screen-illustrations-2x.jpg 2x"
                         src="./images/screen-illustrations.jpg" 
                         alt="Screen Illustrations"
                         width="360"
@@ -405,6 +476,7 @@
                     <li class="portfolio-item card-one">
                     <div class="portfolio-cards">
                         <img 
+                        srcset="./images/online-courses.jpg 1x, ./images/online-courses-2x.jpg 2x"
                         src="./images/online-courses.jpg" 
                         alt="Online Courses"
                         width="360"
@@ -488,71 +560,9 @@
         </div>
     </footer>
 
-    <!-- MENU -->
-
-    <div class="menu is-open">
-
-
-        
-        <div class="menu-modal">
-            <button type="button" class="modal-btn">
-                <svg class="modal-btn-icon" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-            </button>
-
-            <div class="menu-list">    
-                <h2 class="menu-list-item"><a href="./index.html" class="index-menu">Studio</a></h2>
-                <h2 class="menu-list-item">Portfolio</h2>
-                <h2 class="menu-list-item">Contacts</h2>
-            </div>
-
-            <div class="menu-contacts">
-            <address class="menu-list-contacts">
-                <h3 class="menu-tel"><a href="tel:+110001111111" class="menu-tel-add address">+11 (000) 111-11-11</a></h3>
-                <h3 class="menu-mail"><a href="mailto:info@devstudio.com" class="address">info@devstudio.com</a></h3>
-            </address>
-            </div>
-        </div>
-            
-        <div class="menu-icons">
-            <ul class="menu-list-icon">
-                <li class="menu-soc">
-                    <a class="menu-link" href="">
-                        <svg class="menu-soc-icon" width="40" height="40">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="menu-soc">
-                    <a class="menu-link" href="">
-                        <svg class="menu-soc-icon" width="40" height="40">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="menu-soc">
-                    <a class="menu-link" href="">
-                        <svg class="menu-soc-icon" width="40" height="40">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="menu-soc">
-                    <a class="menu-link" href="">
-                        <svg class="menu-soc-icon" width="40" height="40">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-    </div>
-
     <!-- BACKDROP -->
 
-    <div class="backdrop ">
+    <div class="backdrop is-open">
         <div class="modal">
             <button type="button" class="modal-btn">
                 <svg class="modal-btn-icon" width="8" height="8">
@@ -621,7 +631,6 @@
                     class="modal-text"
                     placeholder="Text input"
                     ></textarea>
-                    
                 </div>
 
             <div class="modal-checkbox">
