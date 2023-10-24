@@ -420,7 +420,6 @@ address {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-    display: none;
 }
 
 .description-li {
@@ -438,6 +437,7 @@ address {
     align-items: center;
     justify-content: center;
     margin-bottom: 8px;
+    display: none;
 }
 
 .description-subtitle {
@@ -467,6 +467,7 @@ address {
 .members {
     background-color: #F4F4FD;
     padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .members-ul {
@@ -570,12 +571,17 @@ address {
 
 .portfolio {
     padding-top: 96px;
+    padding-bottom: 96px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
     
+}
+
+.portfolio-container {
+
 }
 
 .portfolio-div {
@@ -682,25 +688,18 @@ address {
 .footer {
     background-color: #2E2F42;
     padding-top: 96px;
-    padding-bottom: 96px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-bottom: 96px
 }
 
 .footer-div {
     display: flex;
     flex-direction: column;
-    gap: 72px;
 }
 
 .container-footer {
-    /* margin-right: 120px; */
     display: inline-flex;
-    height: 24px;
     align-items: center;
     justify-content: center;
-    padding-left: 102px;
-    padding-right: 102px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -719,7 +718,6 @@ address {
     align-items: center;
     justify-content: center;
     height: 24px;
-    
 }
 
 .logo-text {
@@ -732,6 +730,8 @@ address {
     font-size: 16px;
     line-height: 1.5;
     width: 264px;
+    text-align: left;
+    margin-bottom: 72px;
     /* max-width: 264px; */
     
 }
@@ -755,14 +755,12 @@ address {
     gap: 16px;
     align-items: center;
     justify-content: center;
-    margin-top: 16px;
     
 }
 
 .ft-soc {
     width: 40px;
     height: 40px;
-    margin-bottom: 72px;
 }
 
 .footer-link {
@@ -774,6 +772,7 @@ address {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .footer-link:hover,
@@ -807,7 +806,7 @@ address {
 .footer-input::placeholder {
     color: var(--WHITE, #FFF);
     font-size: 12px;
-    line-height: 2%;
+    line-height: 2;
     letter-spacing: 0.02em;
 }
 
@@ -842,7 +841,7 @@ address {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
 
 }
 
@@ -853,6 +852,7 @@ address {
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     font-weight: 500;
+    margin-top: 72px;
 }
 
 .btn-icon { 
@@ -1208,15 +1208,51 @@ address {
 
 /* ===========FOOTER=========== */
 
+.footer {
+    padding-left: 108px;
+    padding-right: 108px;
+}
+
+.footer-div {
+    flex-direction: row;
+    gap: 24px;
+    padding: 0;
+}
+
+.container-footer {
+    align-items: flex-start;
+}
+
+.footer-soc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-div-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-item {
+
+}
+
+.footer-text {
+    margin-top: 0;
+}
 
 }
 
 
 @media screen and (min-width: 1158px) {
     .container { 
-        max-width: 1158px;
-        padding-left: 16px;
-        padding-right: 16px;
+        /* max-width: 1158px; */
+        min-width: 1440px;
+        /* padding-left: 16px;
+        padding-right: 16px; */
         margin: 0 auto;
     }
 
@@ -1337,6 +1373,33 @@ address {
     }
 
     /* ===========FOOTER=========== */
+    .footer {
+        /* padding-left: 156px;
+        padding-right: 156px;
+        padding-top: 100px;
+        padding-bottom: 100px; */
+        /* display: flex; */
+        
+    }
+
+    .container-footer {
+        /* padding-right: 120px; */
+    }
+
+    .footer-soc {
+        /* padding-right: 80px; */
+    }
+
+    .footer-form {
+        flex-wrap: nowrap;
+
+    }
+
+    .footer-div-sub {
+        /* padding-right: 80px; */
+    }
+
+
 
 
 }
