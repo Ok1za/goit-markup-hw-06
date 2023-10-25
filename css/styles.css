@@ -40,7 +40,6 @@ address {
 }
 
 .container { 
-    /* max-width: 1158px; */
     max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
@@ -53,8 +52,6 @@ address {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     background-color: #FFF;
-    
-    /* padding: 24px 0; */
 }
 
 .button-menu-open {
@@ -359,10 +356,9 @@ address {
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     width: 288px;
-    /* max-width: 496px; */
     margin: 0 auto;
+    text-transform: capitalize;
 }
 
 .main-button {
@@ -513,6 +509,7 @@ address {
 
 .members-img {
     width: 100%;
+
 }
 
 .card-subtitle {
@@ -1158,6 +1155,13 @@ address {
 .main-title {
     width: 496px;
     font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+    padding-bottom: 36px;
+}
+
+.main-button {
+    margin-top: 0;
 }
 
 .main-container {
@@ -1243,16 +1247,34 @@ address {
 .footer-text {
     margin-top: 0;
 }
+/* ===========BACKDROP=========== */
+
+    .modal {
+        width: 408px;
+        height: 584px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .modal-text {
+        width: 360px;
+        height: 120px;
+    }
+
+    .check-text {
+        letter-spacing: 0.1;
+    }
+
 
 }
 
 
 @media screen and (min-width: 1158px) {
     .container { 
-        /* max-width: 1158px; */
-        min-width: 1440px;
-        /* padding-left: 16px;
-        padding-right: 16px; */
+        max-width: 1158px;
+        width: 1440px;
+        padding-left: 16px;
+        padding-right: 16px;
         margin: 0 auto;
     }
 
@@ -1263,7 +1285,7 @@ address {
     }
 
     .header-menu-link {
-        
+        padding-left: 156px;
     }
 
     .header-list {
@@ -1285,16 +1307,23 @@ address {
         
     }
 
+    .current::after {
+        bottom: -20px;
+    }
+
     /* ===========SECTION ONE=========== */
 
     .main-title {
         font-size: 56px;
+        padding-bottom: 0;
     }
 
     .main-container {
         padding-top: 188px;
         padding-bottom: 188px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-bg.jpg);
+        
+
     }
 
     .main-button {
@@ -1312,7 +1341,6 @@ address {
     /* ===========SECTION TWO=========== */
 
     .description-list {
-        gap: 8px 24px;
         display: block;
         display: flex;
     }
@@ -1338,9 +1366,20 @@ address {
         font-style: normal;
         font-weight: 400;
         line-height: 1.5;
-        letter-spacing: 0.02em;
+        letter-spacing: 0;
     }
 
+    .main-title {
+        max-width: 496px;
+    }
+
+    .description-icon-div {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+    }
 
     /* ===========SECTION THREE=========== */
 
@@ -1355,6 +1394,9 @@ address {
     .members-cards {
         gap: 32px 24px;
     }
+
+    
+
 
     /* ===========SECTION FOUR=========== */
 
@@ -1375,15 +1417,24 @@ address {
     /* ===========FOOTER=========== */
     .footer {
         /* padding-left: 156px;
-        padding-right: 156px;
+        padding-right: 156px; */
         padding-top: 100px;
-        padding-bottom: 100px; */
-        /* display: flex; */
-        
+        padding-bottom: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-div {
+        gap: 0;
+    }
+
+    .footer-item {
+        margin-bottom: 0;
     }
 
     .container-footer {
-        /* padding-right: 120px; */
+        padding-right: 120px;
     }
 
     .footer-soc {
@@ -1399,6 +1450,18 @@ address {
         /* padding-right: 80px; */
     }
 
+    /* ===========BACKDROP=========== */
+
+    
+
+    .modal-text {
+        width: 360px;
+        height: 120px;
+    }
+
+    .check-text {
+        letter-spacing: 0.1;
+    }
 
 
 
