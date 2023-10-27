@@ -1296,7 +1296,7 @@ address {
     }
 
     .header-menu-link {
-        padding-left: 156px;
+        /* padding-left: 156px; */
     }
 
     .header-list {
@@ -1305,6 +1305,11 @@ address {
 
     .header-menu-link {
         margin-right: 76px;
+    }
+
+    .header-list-contacts {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .header-contacts {
@@ -1319,7 +1324,7 @@ address {
     }
 
     .current::after {
-        bottom: -20px;
+        bottom: -18px;
     }
 
     /* ===========SECTION ONE=========== */
@@ -1413,6 +1418,7 @@ address {
 
     .portfolio {
         padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .portfolio-item {
@@ -1420,8 +1426,7 @@ address {
     }
 
     .portfolio-list {
-        padding-left: 156px;
-        padding-right: 156px;
+        
         gap: 48px 24px;
     }
 
@@ -1449,16 +1454,15 @@ address {
     }
 
     .footer-soc {
-        /* padding-right: 80px; */
+        
     }
 
     .footer-form {
         flex-wrap: nowrap;
-
     }
 
     .footer-div-sub {
-        /* padding-right: 80px; */
+        margin-top: 0;
     }
 
     /* ===========BACKDROP=========== */
