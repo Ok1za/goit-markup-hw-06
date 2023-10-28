@@ -104,8 +104,8 @@ address {
     color: #4d5ae5;
     margin-right: 76px;
     position: relative;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    /* padding-top: 16px;
+    padding-bottom: 16px; */
 }
 
 .header-menu-link:hover,
@@ -611,7 +611,6 @@ address {
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 48px;
     column-gap: 24px;
     row-gap: 48px;
 }
@@ -858,7 +857,6 @@ address {
     letter-spacing: 0.02em;
     margin-bottom: 16px;
     font-weight: 500;
-    margin-top: 72px;
 }
 
 .btn-icon { 
@@ -1123,6 +1121,7 @@ address {
     max-width: 768px;
     padding-left: 16px;
     padding-right: 16px;
+    
 }
 
 /* ===========HEADER=========== */
@@ -1132,15 +1131,24 @@ address {
     display: flex;
 }
 
+.header-contacts {
+    padding: 12px 0;
+}
+
 .header-list-contacts {
     display: block;
-    padding-top: 16px;
+    /* padding-top: 16px;
     padding-bottom: 16px;
+    padding: 24px 16px; */
 }
 
 .address {
     font-size: 12px;
     line-height: 1.7;
+}
+
+.index {
+    padding: 0;
 }
 
 .header-contacts {
@@ -1153,7 +1161,7 @@ address {
 }
 
 .current::after {
-    bottom: -8px;
+    bottom: -28px;
 }
 
 .header-menu-link {
@@ -1166,7 +1174,7 @@ address {
     font-size: 56px;
     line-height: 1.07;
     text-transform: none;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
 }
 
 .main-button {
@@ -1227,7 +1235,7 @@ address {
 
 .footer-div {
     flex-direction: row;
-    gap: 24px;
+    gap: 72px 24px;
     padding: 0;
     flex-wrap: wrap;
     max-width: 508px;
@@ -1248,7 +1256,7 @@ address {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+    margin-top: 0;
 }
 
 .footer-item {
@@ -1287,6 +1295,7 @@ address {
         padding-left: 16px;
         padding-right: 16px;
         margin: 0 auto;
+        
     }
 
     /* ===========HEADER=========== */
@@ -1324,7 +1333,7 @@ address {
     }
 
     .current::after {
-        bottom: -18px;
+        bottom: -28px;
     }
 
     /* ===========SECTION ONE=========== */
@@ -1338,7 +1347,7 @@ address {
         padding-top: 188px;
         padding-bottom: 188px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-bg.jpg);
-        
+        max-width: 1440px;
 
     }
 
@@ -1401,6 +1410,7 @@ address {
 
     .members {
         padding-top: 120px;
+        padding-bottom: 120px;
     }
 
     .members-item {
@@ -1450,11 +1460,11 @@ address {
     }
 
     .container-footer {
-        padding-right: 120px;
+        margin-right: 120px;
     }
 
     .footer-soc {
-        
+        margin-right: auto;
     }
 
     .footer-form {
